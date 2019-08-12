@@ -4,7 +4,7 @@
   "description": "Polviks API based on Node JS, Express and Graph QL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --timeout 5000",
     "start": "nodemon app.js"
   },
   "author": "",
@@ -21,6 +21,9 @@
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+    "sinon": "^7.4.1"
   }
 }

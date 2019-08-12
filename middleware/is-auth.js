@@ -4,7 +4,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 module.exports = (req, res, next) => {
     const authHeader = req.get('Authorization');
     if (!authHeader) {
-        const error = new Error('Not Authenticated');
+        const error = new Error('Not Authenticated.');
         error.statusCode = 401;
         throw error;
     }
